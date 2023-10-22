@@ -1,13 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jazz School</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!--referenciando o arquivo CSS -->
 </head>
+
 <body>
     <header>
-        <img src="img/logo.svg" alt="Jazz School">
+        <div class="container">
+            <img src="img/logogs.svg" alt="Jazz School" class="logo">
+            <nav class="mouse">
+                <a href="#">Inicio</a>
+                <a href="#">Cursos</a>
+                <a href="#">Eventos</a>
+                <a href="#">Contato</a>
+            </nav>
+            <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
+        </div>
     </header>
+    <main>
+        <section class="hero-section">
+            <div class="container row-reverse">
+                <img src="img/Artist-amico_new.svg" alt="Pintura" class="imagem">
+                <div>
+                    <h1 class="mt-2">Crie algo <span class="text-primary decoration">inspirador</span> com arte</h1>
+                    <!-- quando quer separar algo para estilizar futuramente coloca o "Span" que dai da pra separar dps-->
+                    <p class="mt-2 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illo
+                        nesciunt maxime. Ipsa saepe
+                        ratione minima dolorem, architecto modi quae nobis nemo suscipit tempora debitis aspernatur
+                        provident, doloribus atque possimus.</p>
+                    <a href="#" class="button">Comece agora</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="courses-section">
+            <div class="cards">
+
+                <article class="card">
+                    <img src="img/PaintBrush.svg" alt="icone de pincel de pintura" class="svg">
+                    <strong>Pintura</strong>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae amet atque.</p>
+                    <a href="#">
+                        <img src="img/arrow-right.svg" alt="Ir para pagina do curso">
+                    </a>
+                </article>
+                <article class="card">
+                    <img src="img/Pencil.svg" alt="icone de telas da clave de sol" class="svg">
+                    <strong>Desenho</strong>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae amet atque.</p>
+                    <a href="#">
+                        <img src="img/arrow-right.svg" alt="Ir para pagina do curso">
+                    </a>
+                </article>
+                <article class="card">
+                    <img src="img/theater.png" alt="icone de saxofone" class="svg">
+                    <strong>Teatro</strong>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae amet atque.</p>
+                    <a href="#">
+                        <img src="img/arrow-right.svg" alt="Ir para pagina do curso">
+                    </a>
+                </article>
+                <article class="card">
+                    <img src="img/clef.png" alt="icone de nota">
+                    <strong>Canto</strong>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae amet atque.</p>
+                    <a href="#">
+                        <img src="img/arrow-right.svg" alt="Ir para pagina do curso">
+                    </a>
+                </article>
+
+            </div>
+            <h2 class="text-center">E <span class="text-primary ">varios</span> outros!</h2>
+            <a href="#" class="button mt-2 mx-auto">Conhecer cursos</a>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="about-column">
+                <img src="img/logogs.svg" alt="Jazz School" class="mt-1 mb-1">
+                <p class="mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae amet atque nemo suscipit tempora debitis aspernatur
+                    provident, doloribus atque possimus. </p>
+            </div>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Cursos</a>
+                <a href="#">Eventos</a>
+                <a href="#">Contato</a>
+            </nav>
+            <form class="newsletter-form">
+                <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
+                <input type="text" name="email" id="email" class="mb-1" placeholder="Digite seu email">
+                <button class="button mb-2">Quero receber</button>
+            </form>
+        </div>
+
+    </footer>
 </body>
+
 </html>
