@@ -41,6 +41,7 @@ nav a {
 nav a:hover{
     background-color: #5f50fd;
     border-radius: 5px;
+    border-width: auto;
 }
 
 header nav a:nth-child(2n-1) {
@@ -52,7 +53,27 @@ header nav a:nth-child(2n-1) {
     max-width:842px;
     max-height:561px;
     filter: drop-shadow(5px 5px 5px #776CF4);
+
+    animation: flutuacao 10s;
+    animation-iteration-count: infinite;
 }
+@keyframes flutuacao {
+    0%{
+        transform: translatey(10px) rotate(5deg);
+        
+    }
+    50%{
+        transform: translatey(-10px) rotate(0deg);
+        
+    }
+
+    100%{
+        transform: translatey(10px) rotate(5deg);
+        
+    }
+}
+    
+
 header,
 .hero-section,
 .courses-section,
@@ -87,6 +108,10 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     font-style: oblique;
+}
+.button:hover{
+    background-color: rgb(255, 73, 73);
+    
 }
 
 .hero-section {
